@@ -35,11 +35,11 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-# Fingerprint
+# UDFPS
 TARGET_HAS_UDFPS := true
 
 # Properties
--include $(LOCAL_PATH)/properties.mk
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from sm7250-common
 $(call inherit-product, device/xiaomi/sm7250-common/lito.mk)
@@ -49,3 +49,4 @@ EXTRA_UDFPS_ANIMATIONS := true
 
 # SoC
 PROCESSOR_MODEL := SM7250
+
