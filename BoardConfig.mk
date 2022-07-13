@@ -21,6 +21,10 @@ TARGET_BOARD_PLATFORM := lito
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_monet
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_monet
+
 # Kernel
 TARGET_KERNEL_CONFIG := monet_defconfig
 
