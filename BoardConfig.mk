@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/monet
+DEVICE_PATH := device/xiaomi/vangogh
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -21,7 +21,7 @@ TARGET_BOOTLOADER_BOARD_NAME := lito
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_CONFIG := monet_defconfig
+TARGET_KERNEL_CONFIG := vendor/vangogh_user_defconfig
 
 # SoC
 PROCESSOR_MODEL := SM7250
@@ -30,4 +30,4 @@ PROCESSOR_MODEL := SM7250
 TARGET_HAS_UDFPS := true
 
 # Inherit from the proprietary version
-include vendor/xiaomi/monet/BoardConfigVendor.mk
+include vendor/xiaomi/vangogh/BoardConfigVendor.mk

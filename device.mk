@@ -5,7 +5,7 @@
 #
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/monet/monet-vendor.mk)
+$(call inherit-product, vendor/xiaomi/vangogh/vangogh-vendor.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
