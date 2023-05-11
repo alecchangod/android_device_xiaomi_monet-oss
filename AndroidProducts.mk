@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/xtended_monet.mk
+   $(LOCAL_DIR)/arrow_monet.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_monet-user \
-    xtended_monet-userdebug \
-    xtended_monet-eng
+    arrow_monet-user \
+    arrow_monet-userdebug \
+    arrow_monet-eng
