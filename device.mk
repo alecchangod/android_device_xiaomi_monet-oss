@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/monet/monet-vendor.mk)
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -41,12 +38,14 @@ TARGET_HAS_UDFPS := true
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
-# Inherit from sm7250-common
-$(call inherit-product, device/xiaomi/sm7250-common/lito.mk)
-
 # UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
 
 # SoC
 PROCESSOR_MODEL := SM7250
 
+# Inherit from sm7250-common
+$(call inherit-product, device/xiaomi/sm7250-common/lito.mk)
+
+# Inherit from vendor blobs
+$(call inherit-product, vendor/xiaomi/monet/monet-vendor.mk)
