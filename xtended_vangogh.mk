@@ -14,8 +14,11 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 # Inherit from vangogh device
 $(call inherit-product, device/xiaomi/vangogh/device.mk)
 
+# Include firmware
+$(call inherit-product, vendor/xiaomi-firmware/monet/firmware.mk)
+
 # MIUI Camera
-$(call inherit-product, vendor/xiaomi/camera/products/miuicamera.mk)
+$(call inherit-product, vendor/xiaomi/monet-miuicamera/products/miuicamera.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := xtended_vangogh
@@ -35,10 +38,11 @@ XTENDED_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_BLUR := true
 XTENDED_BUILD_DONATE_URL := https://www.paypal.com/paypalme/Alec174
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cheetah-user 13 TQ2A.230305.008.C1 9619669 release-keys"
+    PRIVATE_BUILD_DESC="cheetah-user 13 TQ3A.230605.012 10204971 release-keys"
 
-BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ2A.230305.008.C1/9619669:user/release-keys
+BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ3A.230605.012/10204971:user/release-keys

@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/vangogh/vangogh-vendor.mk)
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -16,8 +13,16 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+PRODUCT_PACKAGES += \
+    ApertureOverlayMonet \
+    FrameworksResOverlayMonet \
+    SettingsLibOverlayMonet \
+    SettingsOverlayMonet \
+    SettingsProviderOverlayMonet \
+    SimpleDeviceConfigOverlayMonet \
+    SystemUIOverlayMonet
 
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
@@ -32,17 +37,21 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-# Fingerprint
+# UDFPS
 TARGET_HAS_UDFPS := true
 
 # Properties
--include $(LOCAL_PATH)/properties.mk
-
-# Inherit from sm7250-common
-$(call inherit-product, device/xiaomi/sm7250-common/lito.mk)
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
 
 # SoC
-PROCESSOR_MODEL := SM7250 
+PROCESSOR_MODEL := SM7250
+
+# Inherit from sm7250-common
+$(call inherit-product, device/xiaomi/sm7250-common/lito.mk)
+
+# Inherit from vendor blobs
+$(call inherit-product, vendor/xiaomi/vangogh/vangogh-vendor.mk)
+
