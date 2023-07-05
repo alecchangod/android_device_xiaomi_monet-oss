@@ -16,6 +16,7 @@ TARGET_IS_VAB := false
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lito
+TARGET_BOARD_PLATFORM := lito
 
 # Display
 TARGET_SCREEN_DENSITY := 440
@@ -28,6 +29,9 @@ PROCESSOR_MODEL := SM7250
 
 # UDFPS
 TARGET_HAS_UDFPS := true
+
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version
 include vendor/xiaomi/monet/BoardConfigVendor.mk
