@@ -13,8 +13,16 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+PRODUCT_PACKAGES += \
+    ApertureOverlayMonet \
+    FrameworksResOverlayMonet \
+    SettingsLibOverlayMonet \
+    SettingsOverlayMonet \
+    SettingsProviderOverlayMonet \
+    SimpleDeviceConfigOverlayMonet \
+    SystemUIOverlayMonet
 
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
