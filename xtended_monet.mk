@@ -40,6 +40,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := true
 XTENDED_BUILD_DONATE_URL := https://www.paypal.com/paypalme/Alec174
+XTENDED_BUILD_SUPPORT_URL := https://t.me/alec_rom_support
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
