@@ -31,12 +31,16 @@ PRODUCT_MODEL := M2002J9G
 
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
-# Build fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cheetah-user 13 TQ3A.230605.012 10204971 release-keys"
-
 # ArrowOS additions
 DEVICE_MAINTAINER := alecchangod
 
-BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ3A.230605.012/10204971:user/release-keys
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_BLUR := true
+BUILD_USERNAME := alecchangod
+BUILD_HOSTNAME := alecchangod-build
 
+# Build fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="monet-user 12 SKQ1.211006.001 V13.0.2.0.SJIEUXM release-keys"
