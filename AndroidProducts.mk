@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/derp_monet.mk
+   $(LOCAL_DIR)/arrow_monet.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_monet-user \
-    derp_monet-userdebug \
-    derp_monet-eng
+    arrow_monet-user \
+    arrow_monet-userdebug \
+    arrow_monet-eng
