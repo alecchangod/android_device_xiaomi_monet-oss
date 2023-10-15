@@ -15,21 +15,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
-# Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
-PRODUCT_PACKAGES += \
-    ApertureOverlayMonet \
-    FrameworksResOverlayMonet \
-    SettingsLibOverlayMonet \
-    SettingsOverlayMonet \
-    SettingsProviderOverlayMonet \
-    SimpleDeviceConfigOverlayMonet \
-    SystemUIOverlayMonet
-
-PRODUCT_PACKAGES += \
-    XtendedFrameworksResCommon
-
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := sm7250
@@ -50,6 +35,24 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 TARGET_HAS_UDFPS := true
+
+# FM
+TARGET_HAS_FM := true
+
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+PRODUCT_PACKAGES += \
+    ApertureOverlayMonet \
+    FrameworksResOverlayMonet \
+    SettingsLibOverlayMonet \
+    SettingsOverlayMonet \
+    SettingsProviderOverlayMonet \
+    SimpleDeviceConfigOverlayMonet \
+    SystemUIOverlayMonet
+
+PRODUCT_PACKAGES += \
+    XtendedFrameworksResCommon
 
 # UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
