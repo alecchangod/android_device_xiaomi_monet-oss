@@ -5,5 +5,7 @@
 
 runtime_resource_overlay {
     name: "ApertureOverlayMonet",
-    system_ext_specific: true,
+    theme: "ApertureOverlayMonet",
+    sdk_version: "current",
+    product_specific: true,
 }

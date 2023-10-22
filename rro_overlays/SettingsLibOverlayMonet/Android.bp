@@ -16,7 +16,7 @@
 
 runtime_resource_overlay {
     name: "SettingsLibOverlayMonet",
+    theme: "SettingsLibOverlayMonet",
     sdk_version: "current",
-    resource_dirs: ["res"],
-    vendor: true,
+    product_specific: true,
 }

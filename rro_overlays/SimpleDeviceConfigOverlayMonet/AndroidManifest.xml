@@ -13,9 +13,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.settingsprovider.overlay.monet">
 
-    <application android:hasCode="false" />
     <overlay
-      android:targetPackage="org.protonaosp.deviceconfig"
-      android:isStatic="true"
-      android:priority="1"/>
+        android:isStatic="true"
+        android:priority="550"
+        android:targetPackage="org.protonaosp.deviceconfig" />
 </manifest>
