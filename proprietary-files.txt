@@ -98,6 +98,7 @@ vendor/lib64/libbtnv.so
 
 # Camera
 system/lib/libmediaplayer_shim.so|e6711a39bd4feca1daf64070aa6b6895db7998c6
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib64/camera/com.qti.eeprom.monet_ofilm_gc02m1_gt24p64b.so
@@ -138,6 +139,7 @@ vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/com.qti.feature2.anchorsync.so
