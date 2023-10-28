@@ -32,7 +32,7 @@ PROCESSOR_MODEL := SM7250
 TARGET_HAS_UDFPS := true
 
 # Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # Inherit from sm7250-common
 include device/xiaomi/sm7250-common/BoardConfigCommon.mk

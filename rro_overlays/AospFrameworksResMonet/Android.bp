@@ -4,7 +4,7 @@
 //
 
 runtime_resource_overlay {
-    name: "XtendedFrameworksResCommon",
+    name: "AospFrameworksResMonet",
     sdk_version: "current",
     product_specific: true,
 }
