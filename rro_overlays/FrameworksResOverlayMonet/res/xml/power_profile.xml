@@ -84,9 +84,9 @@
       <value>135.00</value> <!-- 2400 MHz CPU speed -->
     </array>
     <!-- Additional power used when screen is ambient mode -->
-    <item name="ambient.on">32</item>
-    <item name="screen.on">72.43</item> 
-    <item name="screen.full">354.31</item> 
+    <item name="ambient.on.display0">32</item>
+    <item name="screen.on.display0">72.43</item>
+    <item name="screen.full.display0">354.31</item>
     <!-- Average power used by the camera flash module when on -->
     <item name="camera.flashlight">154.44</item> 
     <item name="camera.avg">568.51</item> 
