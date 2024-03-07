@@ -34,8 +34,8 @@ TARGET_HAS_UDFPS := true
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
-# Inherit from sm8250-common
-include device/xiaomi/sm8250-common/BoardConfigCommon.mk
+# Inherit from sm7250-common
+include device/xiaomi/sm7250-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
 include vendor/xiaomi/monet/BoardConfigVendor.mk
