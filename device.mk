@@ -55,7 +55,7 @@ EXTRA_UDFPS_ANIMATIONS := true
 PROCESSOR_MODEL := SM7250
 
 # Inherit from sm7250-common
-$(call inherit-product, device/xiaomi/sm7250-common/common.mk)
+$(call inherit-product, device/xiaomi/sm7250-common/lito.mk)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/monet/monet-vendor.mk)
