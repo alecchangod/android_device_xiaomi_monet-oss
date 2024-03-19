@@ -26,3 +26,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="monet-user 12 SKQ1.211006.001 V13.0.2.0.SJIEUXM release-keys"
 
 BUILD_FINGERPRINT := Xiaomi/monet_eea/monet:12/SKQ1.211006.001/V13.0.2.0.SJIEUXM:user/release-keys
+
+# Inherit from dolby
+ifeq ($(TARGET_USES_DOLBY),true)
+$(call inherit-product, vendor/sony/dolby/sony-dolby-vendor.mk)
+endif
