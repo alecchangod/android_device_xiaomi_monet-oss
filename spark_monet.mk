@@ -37,3 +37,6 @@ BUILD_FINGERPRINT := Xiaomi/monet_eea/monet:12/SKQ1.211006.001/V13.0.2.0.SJIEUXM
 ifeq ($(TARGET_USES_DOLBY),true)
 $(call inherit-product, vendor/sony/dolby/sony-dolby-vendor.mk)
 endif
+
+# Inherit from Leica camera
+$(call inherit-product, vendor/xiaomi/monet-leicacamera/leica-camera-vendor.mk)
