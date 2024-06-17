@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_monet.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_monet-user \
-    lineage_monet-userdebug \
-    lineage_monet-eng
+    lineage_monet-ap1a-user \
+    lineage_monet-ap1a-userdebug \
+    lineage_monet-ap1a-eng
