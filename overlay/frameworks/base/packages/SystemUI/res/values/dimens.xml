@@ -44,4 +44,8 @@
     <!-- Recognizing fingerprint animation -->
     <dimen name="udfps_animation_size">270dp</dimen>
     <dimen name="udfps_animation_offset">38dp</dimen>
+
+    <!-- Microns/ums (1000 um = 1mm) per pixel for the given device. If unspecified, UI that
+         relies on this value will not be sized correctly. -->
+    <item name="pixel_pitch" format="float" type="dimen">63.34</item>
 </resources>
