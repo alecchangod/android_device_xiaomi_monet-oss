@@ -31,9 +31,8 @@ TARGET_HAS_UDFPS := true
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="monet-user 12 SKQ1.211006.001 V13.0.2.0.SJIEUXM release-keys"
-
-BUILD_FINGERPRINT := Xiaomi/monet_eea/monet:12/SKQ1.211006.001/V13.0.2.0.SJIEUXM:user/release-keys
+    BuildDesc="monet-user 12 SKQ1.211006.001 V13.0.2.0.SJIEUXM release-keys" \
+    BuildFingerprint=Xiaomi/monet_eea/monet:12/SKQ1.211006.001/V13.0.2.0.SJIEUXM:user/release-keys
 
 # Inherit from dolby
 $(call inherit-product-if-exists, vendor/sony/dolby/sony-dolby-vendor.mk)
