@@ -11,6 +11,9 @@ DEVICE_PATH := device/xiaomi/monet
 
 BUILD_BROKEN_DUP_RULES := true
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := monet,milito
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
