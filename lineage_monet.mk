@@ -20,6 +20,14 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2002J9G
 
+
+# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer) 
+# (Optional if builder is setting properties via init_<device>.cpp)
+RISING_MAINTAINER="alecchangod"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 765G" \
+    RisingMaintainer="alecchangod"
+
 # Matrixx stuffs
 MATRIXX_BATTERY := 4160mah
 MATRIXX_BUILD_TYPE := Official
