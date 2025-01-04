@@ -42,3 +42,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/monet-leicacamera/leica-camera-v
 
 # Include firmware
 $(call inherit-product, vendor/xiaomi-firmware/monet/firmware.mk)
+
+# Sign Builds
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lineage-priv/keys/releasekey
